@@ -15,12 +15,16 @@ const Shop = () => {
     const newProduct = [...carts, product];
     setCarts(newProduct);
   };
-
+  // signle item delete functionality
   const deleteItem = (id) => {
     const rest = carts.filter((item) => item.id !== id);
     setCarts(rest);
   };
-
+  // rest button functionality
+  const resetBtn = (selectedCarts) => {
+    selectedCarts = [];
+    setCarts(selectedCarts);
+  };
   return (
     <div className="shop-container">
       <div className="py-5">
@@ -39,7 +43,7 @@ const Shop = () => {
             </div>
           </div>
           <div className="col-lg-3 cart-container shadow">
-            <Cart carts={carts} deleteItem={deleteItem} />
+            <Cart carts={carts} deleteItem={deleteItem} resetBtn={resetBtn} />
           </div>
         </div>
       </div>
