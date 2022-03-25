@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 const NavBar = () => {
   return (
     <div>
-      <Navbar expand="lg" className="navbar  navbar-dark bg-dark ">
+      <Navbar expand="lg" className="navbar  navbar-dark bg-dark fixed-top">
         <Container>
           <Navbar.Brand href="#home">Webline Tech</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
