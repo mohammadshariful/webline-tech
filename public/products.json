@@ -1,65 +1,74 @@
 [
   {
     "id": "1",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
+    "name": "Lenovo IdeaPad",
     "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
     "price": 36700
   },
   {
     "id": "2",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
-    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
-    "price": 36700
+    "name": "Apple MacBook",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-air/MGN73/macbook-mgn73Zp-a-500x500.jpg",
+    "price": 98490
   },
   {
     "id": "3",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
-    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
-    "price": 36700
+    "name": "Apple Macbook Pro 13",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro-13-m1/macbook-pro-13-m1-500x500.jpg",
+    "price": 145000
   },
   {
     "id": "4",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
-    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
-    "price": 36700
+    "name": "Samsung Galaxy Book Pro",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/samsung/galaxy-book-pro-360/galaxy-book-pro-360-02-500x500.jpg",
+    "price": 160000
   },
   {
     "id": "5",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
-    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
-    "price": 36700
+    "name": "Acer Aspire 3 A315-58",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/aspire-3-a315-58/aspire-3-a315-58-001-500x500.jpg",
+    "price": 43000
   },
   {
     "id": "6",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
-    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
-    "price": 36700
+    "name": "Acer Extensa 15 EX215-52-58SQ",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/extensa-ex215/extensa-ex215-1-500x500.jpg",
+    "price": 53300
   },
   {
     "id": "7",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
-    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
-    "price": 36700
+    "name": "Asus VivoBook 15 X515FA",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-15-x515ea/vivobook-15-x515ea-05-500x500.jpg",
+    "price": 47000
   },
   {
     "id": "8",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
-    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
-    "price": 36700
+    "name": "ASUS ExpertBook L1",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/expertbook-l1-l1500cda/expertbook-l1-l1500cda-01-500x500.jpg",
+    "price": 53000
   },
   {
     "id": "9",
-    "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6",
-    "singleName": "Lenovo",
-    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
-    "price": 36700
+    "name": "Dell Inspiron 15 3501",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/dell/15-3501/3501-0010-500x500.jpg",
+    "price": 60500
+  },
+  {
+    "id": "10",
+    "name": "HP Pavilion 15-eg1678TU",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/pavilion-15-eg1678tu/pavilion-15-eg1678tu-01-500x500.jpg",
+    "price": 72000
+  },
+  {
+    "id": "11",
+    "name": "Walton Passion BP7800",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/walton/passion-bp7800/passion-bp7800-500x500.jpg",
+    "price": 59000
+  },
+  {
+    "id": "12",
+    "name": "NEXSTGO NX101",
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/nexstgo/nx101/nx101-1-500x500.jpg",
+    "price": 102000
   }
 ]

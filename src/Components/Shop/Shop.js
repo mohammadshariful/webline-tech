@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
+import { randomSelect } from "../utilities/randomSelect";
 import "./Shop.css";
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -25,11 +26,16 @@ const Shop = () => {
     selectedCarts = [];
     setCarts(selectedCarts);
   };
+  // selected handler cart
+  const selectedHandler = (carts) => {
+    const randomCart = randomSelect(carts);
+    setCarts([randomCart]);
+  };
   return (
     <div className="shop-container">
       <div className="py-5">
         <h1 className="text-center">Get Choose products</h1>
-        <h3 className="text-center">Selected four Product</h3>
+        <h3 className="text-center">Selected Your Product</h3>
         <div className="row">
           <div className="col-lg-9">
             <div className="row mx-auto">
@@ -42,8 +48,15 @@ const Shop = () => {
               ))}
             </div>
           </div>
-          <div className="col-lg-3 cart-container shadow">
-            <Cart carts={carts} deleteItem={deleteItem} resetBtn={resetBtn} />
+          <div className="col-lg-3 cart-container ">
+            <div className="carts mx-2 p-2 shadow rounded">
+              <Cart
+                carts={carts}
+                deleteItem={deleteItem}
+                resetBtn={resetBtn}
+                selectedHandler={selectedHandler}
+              />
+            </div>
           </div>
         </div>
       </div>
