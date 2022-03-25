@@ -1,0 +1,12 @@
+.list-container img {
+  width: 30px;
+}
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.deleteBtn {
+  color: #e74c3c;
+  cursor: pointer;
+}
