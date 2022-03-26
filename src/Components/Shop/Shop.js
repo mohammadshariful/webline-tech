@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
+import { errorMsg } from "../utilities/error";
 import { randomSelect } from "../utilities/randomSelect";
 import "./Shop.css";
 const Shop = () => {
@@ -14,7 +15,8 @@ const Shop = () => {
 
   const addToCart = (product) => {
     const newProduct = [...carts, product];
-    setCarts(newProduct);
+
+    errorMsg(newProduct) && setCarts(newProduct);
   };
   // signle item delete functionality
   const deleteItem = (id) => {
