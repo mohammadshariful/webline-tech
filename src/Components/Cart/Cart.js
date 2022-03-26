@@ -6,11 +6,11 @@ const Cart = ({ carts, deleteItem, selectedHandler, resetBtn }) => {
     <div className="mt-4">
       <h4 className="text-center">Order Summary</h4>
       <hr />
-      <div>
+      <ul>
         {carts.map((cart) => (
-          <Item key={Math.random()} cart={cart} deleteItem={deleteItem} />
+          <Item key={Math.random()} items={cart} deleteItem={deleteItem} />
         ))}
-      </div>
+      </ul>
       <div className="btn-container mb-4">
         <button className="bg-primary" onClick={() => selectedHandler(carts)}>
           Select One
