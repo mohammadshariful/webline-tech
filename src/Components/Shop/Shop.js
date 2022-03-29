@@ -2,9 +2,17 @@ import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import { errorMsg } from "../utilities/error";
+import {
+  addToDb,
+  deleteProduct,
+  getItem,
+  removeCart,
+} from "../utilities/fakeDB";
 import { randomSelect } from "../utilities/randomSelect";
 import "./Shop.css";
+/* ================================================================================== */
 const Shop = () => {
+  /* ---------------------------------------------- */
   const [products, setProducts] = useState([]);
   const [carts, setCarts] = useState([]);
   useEffect(() => {
@@ -12,27 +20,63 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+  /* ---------------------------------------------- */
 
-  const addToCart = (product) => {
-    const newProduct = [...carts, product];
+  useEffect(() => {
+    const storedCart = getItem();
+    const newCart = [];
+    for (const id in storedCart) {
+      const unique = products.find((product) => product.id === id);
+      if (unique) {
+        newCart.push(unique);
+      }
+    }
+    setCarts(newCart);
+  }, [products]);
+  /* ---------------------------------------------- */
 
-    errorMsg(newProduct) && setCarts(newProduct);
+  const addToCart = (selectedProduct) => {
+    const exits = carts.find((cart) => cart.id === selectedProduct.id);
+
+    let newCart = [];
+
+    if (!exits) {
+      selectedProduct.quantity = 1;
+      newCart = [...carts, selectedProduct];
+    } else {
+      const rest = carts.filter((cart) => cart.id !== selectedProduct.id);
+      exits.quantity = exits.quantity + 1;
+      newCart = [...rest, exits];
+    }
+    if (errorMsg(newCart)) {
+      setCarts(newCart);
+      addToDb(selectedProduct.id);
+    }
   };
+  /* ---------------------------------------------- */
+
   // signle item delete functionality
   const deleteItem = (id) => {
     const rest = carts.filter((item) => item.id !== id);
     setCarts(rest);
+    deleteProduct(id);
   };
+  /* ---------------------------------------------- */
+
   // rest button functionality
   const resetBtn = (selectedCarts) => {
     selectedCarts = [];
     setCarts(selectedCarts);
+    removeCart();
   };
+  /* ---------------------------------------------- */
+
   // selected handler cart
   const selectedHandler = (carts) => {
     const randomCart = randomSelect(carts);
     setCarts([randomCart]);
   };
+  /* ============================================================================================= */
   return (
     <div className="shop-container">
       <div className="py-5">
